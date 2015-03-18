@@ -41,43 +41,38 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
+					<h1>Battleship Game</h1>
+					<h3>A presentation on how to code battleship game</h3>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small>Created on <a href="https://newcastlecv.wordpress.com/ios-app/">iOS</a> / <a href="https://newcastlecv.wordpress.com/androidapplication/">Android</a></small>
 					</p>
 				</section>
 
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
+                <section>
+                    <h2>Classes / Entities</h2>
+                    <p>To plan out the game's structure we first need to define what entities (i.e. classes) need to be there.</p>
+                    <p>In total I have used 6 classes to define application's logic (separated from the presentation) which are the following.</p>
+                    <br>
+                </section>
 
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+						<h2>Cell</h2>
+						<p>In the battleship game we have two grids one belonging to the player and the other to the opponent.</p>
+                        <p>Each of these grids are made of rows and columns of cells</p>
+                        <p>The cell class defines these cells which can have the following states</p>
+                        <a href="#" class="navigate-down">
+                            <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+                        </a>
 					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
+                    <section>
+                        <p><em>Water:</em> meaning empty.</p>
+                        <p><em>Shipunit:</em> meaning a segment of a ship is located there.</p>
+                        <p><em>Miss:</em> meaning the cell has been targeted before and it was empty.</p>
+                        <p><em>Hit:</em> meaning a segment of a ship has been targeted at that location.</p>
+                        <p><em>Destroyed:</em> meaning this cell is part of a fully targeted(i.e. destroyed) ship.</p>
+                    </section>
 				</section>
 
 				<section>
