@@ -34,7 +34,7 @@ body {
  *********************************************/
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   margin: 0 0 20px 0;
-  color: #fff;
+  color: #c50;
   font-family: 'Source Sans Pro', Helvetica, sans-serif;
   font-weight: 600;
   line-height: 1.2;
@@ -181,14 +181,14 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #42affa;
+  color: #c50;
   text-decoration: none;
   -webkit-transition: color 0.15s ease;
   -moz-transition: color 0.15s ease;
   transition: color 0.15s ease; }
 
 .reveal a:hover {
-  color: #8dcffc;
+  color: #cc0;
   text-shadow: none;
   border: none; }
 
@@ -259,3 +259,12 @@ body {
  *********************************************/
 .reveal .slide-number {
   color: #42affa; }
+/*********************************************
+ * EXTRA ADDED CSS
+ *********************************************/
+/*
+#progress
+{
+    data-background =  linear-gradient(red, blue);
+}
+*/
