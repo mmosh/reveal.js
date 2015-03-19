@@ -262,9 +262,9 @@ body {
 /*********************************************
  * EXTRA ADDED CSS
  *********************************************/
-/*
+
 #progress
 {
-    data-background =  linear-gradient(red, blue);
+    text-color: #fff;
+    background: -webkit-linear-gradient(#000, #fff);
 }
-*/
