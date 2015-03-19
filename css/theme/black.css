@@ -265,6 +265,8 @@ body {
 
 #progress
 {
-    text-color: #fff;
     background: -webkit-linear-gradient(#000, #fff);
+    background: -o-linear-gradient(#000, #fff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#000, #fff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#000, #fff); /* Standard syntax */
 }
